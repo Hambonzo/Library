@@ -10,8 +10,77 @@ table {
 td, th {
     border: 1px solid black;
     padding: 8px;
-    text-align: left;
+    text-align: center;
     
 }
+
+
+
+button {
+    border-radius: 25px;
+    border: 0px;
+    background-color: rgb(33, 169, 211);
+    color: white;
+    height: 2rem;
+    width: 5rem;
+    font-weight: bold;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    
+}
+
+::backdrop {
+    opacity: 0.75;
+    background-color: grey;
+}
+
+
+#dialog .content > label {
+    align-self: end;
+}
+
+form {
+    display: grid;
+    width: 30vh;
+    row-gap: 0.5rem;
+}
+
+form > div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#submit, #close {
+    justify-self: center;
+}
+
+.status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.change {
+    justify-self: center;
+}
+
+.status * {
+    align-self: center;
+}
+
+
+
+
+
+
 
 
