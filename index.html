@@ -19,14 +19,53 @@
                         <th>Author</th>
                         <th>Pages</th>
                         <th>Have you read this?</th>
-                        <th>ID</th>
+                        <th>Remove Book</th>
                     </tr>
                 </thead>
                 <tbody id="library-body">
-                    
+
+
                 </tbody>
             </table>
         </div>
+    </div>
+
+    <div class="btn">
+        <dialog id="dialog">
+            <div class="content">
+                <form>
+                    <div>
+                        <label for="title">Books Title: </label>
+                        <input id="title" type="text" required>
+                    </div>
+
+                    <div>
+                        <label for="author">Author: </label>
+                        <input id="author" type="text" required>
+                    </div>
+
+                    <div>
+                        <label for="pages">Pages: </label>
+                        <input id="pages" type="text" pattern="[0-9]*">
+                    </div>
+
+                    <div>
+                        <label for="read">Have you read this: </label>
+                        <select id="read">
+                            <option value="true">Yes</option>
+                            <option value="false">No</option>
+                        </select>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="submit" id="submit">Submit</button>
+                        <button type="button" id="close">Close</button>
+                    </div>
+                </form>
+            </div>
+        </dialog>
+
+        <button id="open">New Book</button>
     </div>
 
     <script src="logic.js"></script>
